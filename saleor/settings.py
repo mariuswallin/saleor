@@ -4,14 +4,12 @@ import warnings
 
 import dj_database_url
 import dj_email_url
-import jaeger_client
 import jaeger_client.config
 import sentry_sdk
 from django.contrib.messages import constants as messages
 from django.core.exceptions import ImproperlyConfigured
 from django_prices.utils.formatting import get_currency_fraction
 from sentry_sdk.integrations.django import DjangoIntegration
-
 
 def get_list(text):
     return [item.strip() for item in text.split(",")]
@@ -38,7 +36,7 @@ ROOT_URLCONF = "saleor.urls"
 WSGI_APPLICATION = "saleor.wsgi.application"
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Marius Wallin', 'marius@digitalgnist.no'),
 )
 MANAGERS = ADMINS
 
@@ -56,8 +54,8 @@ DATABASES = {
 }
 
 
-TIME_ZONE = "America/Chicago"
-LANGUAGE_CODE = "en"
+TIME_ZONE = "Europe/Oslo"
+LANGUAGE_CODE = "nb"
 LANGUAGES = [
     ("ar", "Arabic"),
     ("az", "Azerbaijani"),
@@ -331,8 +329,8 @@ AUTH_PASSWORD_VALIDATORS = [
     }
 ]
 
-DEFAULT_COUNTRY = os.environ.get("DEFAULT_COUNTRY", "US")
-DEFAULT_CURRENCY = os.environ.get("DEFAULT_CURRENCY", "USD")
+DEFAULT_COUNTRY = os.environ.get("DEFAULT_COUNTRY", "NO")
+DEFAULT_CURRENCY = os.environ.get("DEFAULT_CURRENCY", "NOK")
 DEFAULT_DECIMAL_PLACES = get_currency_fraction(DEFAULT_CURRENCY)
 DEFAULT_MAX_DIGITS = 12
 DEFAULT_CURRENCY_CODE_LENGTH = 3

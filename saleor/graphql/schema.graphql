@@ -1065,6 +1065,7 @@ enum CountryCode {
   AL
   DZ
   AS
+  US
   AD
   AO
   AI
@@ -1073,14 +1074,12 @@ enum CountryCode {
   AR
   AM
   AW
-  AU
-  AT
   AZ
+  AU
   BS
   BH
   BD
   BB
-  BY
   BE
   BZ
   BJ
@@ -1092,64 +1091,56 @@ enum CountryCode {
   BW
   BV
   BR
-  IO
   BN
   BG
   BF
   BI
-  CV
-  KH
-  CM
   CA
   KY
-  CF
-  TD
   CL
-  CN
   CX
-  CC
   CO
-  KM
-  CG
-  CD
   CK
   CR
-  CI
-  HR
   CU
   CW
-  CY
-  CZ
   DK
+  VI
+  VG
+  AE
+  TF
+  CD
+  DO
+  VA
+  CF
+  IO
   DJ
   DM
-  DO
   EC
   EG
-  SV
   GQ
+  SV
+  CI
   ER
   EE
   SZ
   ET
   EU
   FK
-  FO
   FJ
+  PH
   FI
   FR
   GF
   PF
-  TF
+  FO
   GA
   GM
   GE
-  DE
   GH
   GI
-  GR
-  GL
   GD
+  GL
   GP
   GU
   GT
@@ -1159,32 +1150,40 @@ enum CountryCode {
   GY
   HT
   HM
-  VA
+  GR
   HN
   HK
-  HU
-  IS
+  BY
   IN
   ID
-  IR
   IQ
+  IR
   IE
-  IM
+  IS
   IL
   IT
   JM
   JP
+  YE
   JE
   JO
+  KH
+  CM
+  CV
   KZ
   KE
-  KI
-  KW
+  CN
   KG
+  KI
+  CC
+  KM
+  HR
+  KW
+  CY
   LA
   LV
-  LB
   LS
+  LB
   LR
   LY
   LI
@@ -1192,11 +1191,14 @@ enum CountryCode {
   LU
   MO
   MG
+  MK
   MW
   MY
   MV
   ML
   MT
+  IM
+  MA
   MH
   MQ
   MR
@@ -1209,24 +1211,22 @@ enum CountryCode {
   MN
   ME
   MS
-  MA
   MZ
   MM
   NA
   NR
-  NP
   NL
-  NC
+  NP
   NZ
   NI
   NE
   NG
   NU
-  NF
   KP
-  MK
   MP
+  NF
   NO
+  NC
   OM
   PK
   PW
@@ -1235,23 +1235,22 @@ enum CountryCode {
   PG
   PY
   PE
-  PH
   PN
   PL
   PT
   PR
   QA
+  CG
   RE
   RO
   RU
   RW
-  BL
-  SH
   KN
   LC
   MF
-  PM
   VC
+  BL
+  PM
   WS
   SM
   ST
@@ -1266,50 +1265,51 @@ enum CountryCode {
   SI
   SB
   SO
+  ES
   ZA
   GS
   KR
   SS
-  ES
   LK
+  SH
+  GB
   SD
   SR
   SJ
-  SE
   CH
+  SE
   SY
-  TW
   TJ
+  TW
   TZ
   TH
-  TL
   TG
   TK
   TO
   TT
+  TD
+  CZ
   TN
-  TR
   TM
   TC
   TV
+  TR
+  DE
+  UM
   UG
   UA
-  AE
-  GB
-  UM
-  US
+  HU
   UY
   UZ
   VU
   VE
-  VN
-  VG
-  VI
-  WF
   EH
-  YE
+  VN
+  WF
   ZM
   ZW
+  TL
+  AT
 }
 
 type CountryDisplay {
